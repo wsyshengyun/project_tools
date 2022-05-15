@@ -1,0 +1,5 @@
+linux
+~/.pip/pip.conf
+
+windows
+win+R 运行 %HOMEPATH% 实际打开的是Administrator文件夹

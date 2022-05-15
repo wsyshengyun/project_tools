@@ -1,0 +1,3 @@
+﻿[IdeaVimExtension 插件设置]
+set keep-english-in-normal
+set keep-english-in-normal-and-restore-in-insert
