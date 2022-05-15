@@ -1,0 +1,46 @@
+[user]
+	name = wsy
+	email = wsy8718@163.com
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit  --all
+	lgd = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -10  --all
+	ss = status -sb
+	st = status
+	lp = log --pretty=oneline
+	br = branch
+	co = checkout
+	ci = commit -m
+	ca = commit -a -m
+	ls = ls-files
+	com = checkout master
+	cp = cherry-pick
+	ad = add .
+	lastcommit = reset --soft HEAD^
+
+    mer = merge --no-ff
+
+	df = diff 
+	dsh = diff --staged HEAD 
+	dh = diff HEAD
+
+	rsh = reset --hard
+	rs = reset 
+
+    edcfg = config -e --global
+[core]
+	autocrlf = true
+	quotepath = false
+	editor = vim
+	preloadindex =true
+	fscache = true 
+    
+
+[gc]
+	auto = 256
+[http]
+	sslverify = false
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
